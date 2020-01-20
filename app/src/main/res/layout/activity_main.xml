@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/RecView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/todo_add_Btn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/back_button_round"
+            android:text="ADD TODO"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"/>
+</RelativeLayout>
